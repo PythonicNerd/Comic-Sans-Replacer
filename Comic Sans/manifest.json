@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+
+  "name": "Comic Sans Replacer",
+  "description": "Replaces all text with Comic Sans",
+  "version": "0.1",
+  "author": "Neil Aylor",
+
+  "browser_action": {
+    "default_icon": "img.png",
+    "default_popup": "interface.html",
+    "default_title": "Comic Sans Replacer"
+  },
+  
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["scrub.js"]
+    }
+  ],
+  
+  "permissions": [
+    "activeTab",
+    "https://ajax.googleapis.com/"
+  ]
+}
