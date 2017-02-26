@@ -73,3 +73,9 @@ console.log(input);
 for (var i = 0; i < input.length; i ++){
     input[i].style.fontFamily = "Comic Sans MS";
 }
+
+input = document.getElementsByTagName("p");
+console.log(input);
+for (var i = 0; i < input.length; i ++){
+    input[i].style.fontFamily = "Comic Sans MS";
+}
